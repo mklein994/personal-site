@@ -11,3 +11,5 @@ deploy:
   project: ./dist/
   domain: https://mklein.surge.sh
   skip_cleanup: true
+notifications:
+  email: false
