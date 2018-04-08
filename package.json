@@ -8,7 +8,7 @@
     "build": "ng build --prod",
     "test": "ng test",
     "test:ci": "ng test --single-run true --browsers FirefoxHeadless,ChromeHeadlessNoSandbox",
-    "lint": "ng lint",
+    "lint": "ng lint --type-check true --format codeFrame --force",
     "lint:ci": "ng lint --type-check true",
     "e2e": "ng e2e"
   },
