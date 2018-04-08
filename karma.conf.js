@@ -34,6 +34,7 @@ module.exports = function (config) {
     singleRun: false,
     customLaunchers: {
       firefox_headless: {
+        base: 'Firefox',
         browserName: 'FirefoxHeadless',
         flags: ['-headless'],
         displayName: 'Firefox Headless'
