@@ -30,7 +30,7 @@ module.exports = function (config) {
     colors: true,
     logLevel: config.LOG_INFO,
     autoWatch: true,
-    browsers: ['FirefoxDeveloper'],
+    browsers: [process.env.KARMA_DEFAULT_BROWSER],
     singleRun: false,
     customLaunchers: {
       ChromeHeadlessNoSandbox: {
