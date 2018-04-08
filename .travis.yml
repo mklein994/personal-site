@@ -8,6 +8,7 @@ addons:
   firefox: latest
   chrome: stable
 script:
+  - npm run lint:ci
   - npm run build
   - npm run test:ci
 deploy:
