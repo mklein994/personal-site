@@ -31,6 +31,13 @@ module.exports = function (config) {
     logLevel: config.LOG_INFO,
     autoWatch: true,
     browsers: ['FirefoxDeveloper'],
-    singleRun: false
+    singleRun: false,
+    customLaunchers: {
+      firefox_headless: {
+        browserName: 'FirefoxHeadless',
+        flags: ['-headless'],
+        displayName: 'Firefox Headless'
+      }
+    }
   });
 };
