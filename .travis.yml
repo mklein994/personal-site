@@ -10,7 +10,7 @@ addons:
   chrome: stable
 script:
   - npm run lint:ci
-  - npm run build
+  - npm run build:ci
   - npm run test:ci
 deploy:
   provider: surge

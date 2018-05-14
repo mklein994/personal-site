@@ -82,7 +82,8 @@
           },
           "configurations": {
             "ci": {
-              "browsers": "FirefoxHeadless,ChromeHeadlessNoSandbox"
+              "browsers": "FirefoxHeadless,ChromeHeadlessNoSandbox",
+              "progress": false
             }
           }
         },
