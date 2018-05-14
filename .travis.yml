@@ -1,5 +1,6 @@
 language: node_js
 node_js:
+  - "lts/*"
   - "node"
 cache:
   directories:
@@ -16,5 +17,11 @@ deploy:
   project: ./dist/
   domain: https://mklein.surge.sh
   skip_cleanup: true
+  on:
+    node: "node"
+matrix:
+  fast_finish: true
+  allow_failures:
+    - node: "lts/*"
 notifications:
   email: false
