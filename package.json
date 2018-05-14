@@ -7,9 +7,9 @@
     "start": "ng serve",
     "build": "ng build --prod",
     "test": "ng test",
-    "test:ci": "ng test --single-run true --browsers FirefoxHeadless,ChromeHeadlessNoSandbox",
-    "lint": "ng lint --type-check true --format codeFrame --force",
-    "lint:ci": "ng lint --type-check true",
+    "test:ci": "ng test -c ci",
+    "lint": "ng lint",
+    "lint:ci": "ng lint -c ci",
     "e2e": "ng e2e"
   },
   "private": true,

@@ -69,6 +69,8 @@
             "karmaConfig": "./karma.conf.js",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "src/tsconfig.spec.json",
+            "watch": false,
+            "browsers": "FirefoxHeadless,ChromeHeadless",
             "scripts": [],
             "styles": [
               "src/styles.scss"
@@ -77,6 +79,11 @@
               "src/assets",
               "src/favicon.ico"
             ]
+          },
+          "configurations": {
+            "ci": {
+              "browsers": "FirefoxHeadless,ChromeHeadlessNoSandbox"
+            }
           }
         },
         "lint": {
@@ -88,7 +95,16 @@
             ],
             "exclude": [
               "**/node_modules/**"
-            ]
+            ],
+            "format": "stylish"
+          },
+          "configurations": {
+            "fix": {
+              "fix": true
+            },
+            "ci": {
+              "format": "prose"
+            }
           }
         }
       }
@@ -113,7 +129,16 @@
             ],
             "exclude": [
               "**/node_modules/**"
-            ]
+            ],
+            "format": "stylish"
+          },
+          "configurations": {
+            "fix": {
+              "fix": true
+            },
+            "ci": {
+              "format": "prose"
+            }
           }
         }
       }
